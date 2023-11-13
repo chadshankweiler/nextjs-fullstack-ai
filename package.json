@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.27.1",
+    "@prisma/client": "^5.5.2",
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
@@ -24,6 +25,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "prisma": "^5.5.2"
   }
 }
