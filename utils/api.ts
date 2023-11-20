@@ -9,9 +9,24 @@ export const createNewEntry = async () => {
         })
     );
 
-    if(res.ok) {
-        const data = await res.json()
-        console.log(data)
-        return data.data
+    if (res.ok) {
+        const data = await res.json();
+        console.log(data);
+        return data.data;
     }
 };
+
+export const editEntry = async (id, content) => {
+    const res = await fetch(
+        new Request(createUrl(`/api/journal/${id}/`), {
+            method: "PATCH",
+            body: JSON.stringify({ content }),
+        })
+    );
+
+    if (res.ok) {
+        const data = await res.json();
+        return data.data;
+    }
+};
+
