@@ -41,7 +41,7 @@ const Question = () => {
                     Ask
                 </button>
             </form>
-            {response && (<div>{response}</div>)}
+            {response && <div>{response}</div>}
         </div>
     );
 };
